@@ -302,6 +302,11 @@ ifeq ($(LINEAGE_BUILD),true)
 include vendor/lineage/config/version.mk
 endif
 
+# Freeform 
+PRODUCT_PACKAGES += \
+    LMOFreeform \
+    LMOFreeformSidebar
+
 -include vendor/lineage-priv/keys/keys.mk
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
